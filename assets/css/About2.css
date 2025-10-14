@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Rajdhani:wght@300;400;500;600;700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Rajdhani:wght@300;400;500;600;700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+.wrapper-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background: #f8ebc9;
+  z-index: 999;
+}
+.container-header {
+  width: calc(100% - 270px);
+  margin-left: 135px;
+  margin-right: 135px;
+  z-index: 1000;
+}
+.header {
+  background: #f8ebc9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.header .left-header {
+  display: flex;
+  gap: 240px;
+}
+
+.left-header .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo .text-just {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.logo .text-law {
+  font-size: 1.4rem;
+}
+.left-header nav {
+  display: flex;
+  align-items: center;
+}
+.left-header .navigation {
+  display: flex;
+  gap: 40px;
+  color: #0e1412;
+}
+.left-header .navigation a {
+  font-family: "Manrope";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+}
+.navigation .muti-menu::after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: url("../img/arrow-down.svg") no-repeat center;
+  background-size: contain;
+  margin-left: 5px;
+}
+
+.navigation .muti-menu:hover {
+  color: #fd6038;
+}
+
+.navigation .muti-menu:hover::after {
+  transform: rotate(180deg);
+  filter: invert(48%) sepia(78%) saturate(4191%) hue-rotate(347deg)
+    brightness(101%) contrast(97%);
+}
+.contact a {
+  font-family: "Manrope";
+  font-size: 1.6rem;
+  text-decoration: none;
+  line-height: 28px;
+  font-weight: 400;
+  font-style: normal;
+  width: 230px;
+  color: #0e1412;
+}
+.contact a span {
+  text-align: center;
+  font-family: "Manrope";
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  color: #0e1412;
+}
+.container-header .header .menu-toggle {
+  display: none;
+}
+/* End .header */
+/* Start .hero-section(css cho trang 1) */
+.hero-section {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.container {
+  margin-left: 135px;
+  margin-right: 135px;
+}
+.page-1 {
+  padding: 150px 0;
+}
+.main-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+}
+h2 {
+  color: #0e1412;
+  text-align: center;
+  font-family: "Roboto Slab";
+  font-size: 4.2rem;
+  font-weight: 700;
+  line-height: 52px;
+}
+.text-width {
+  width: 70%;
+}
+.contain-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  width: 100%;
+}
+.box-left,
+.box-right {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.box-img-1 img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  transition: transform 0.3s ease;
+}
+
+.play img {
+  width: 60px;
+  height: 60px;
+}
+.img-info {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  background: #fd6038;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  transition: bottom 0.4s ease;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+h3 {
+  margin: 0 0 10px;
+  color: #fff;
+  font-family: "Manrope";
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.img-info p {
+  color: #fff;
+  font-family: "Manrope";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.box-left:hover .img-info,
+.box-right:hover .img-info {
+  bottom: 0;
+}
+
+.box-left:hover .box-img-1 img,
+.box-right:hover .box-img-1 img {
+  transform: scale(1.05);
+}
+
+.box-left:hover .play,
+.box-right:hover .play {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+/* Start .page-2 */
+.main-box-2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 61px;
+  width: 100%;
+}
+.page-2 {
+  padding-bottom: 150px;
+}
+
+.box-right-2 {
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  aspect-ratio: 1 / 1;
+  flex-basis: 50%;
+}
+.box-left-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 60px 0;
+  flex-basis: 50%;
+}
+.box-left-2 p {
+  color: #586863;
+  font-family: "Manrope";
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 30px;
+}
+.sub-heading {
+  color: #586863;
+  font-family: "Roboto Slab";
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 30px;
+  width: 100%;
+}
+.mt-30 {
+  margin-top: 30px;
+}
+
+.box-right-2 img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 20px;
+  z-index: 10;
+}
+.box-press-on {
+  width: 30%;
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #fd6038;
+  z-index: 3;
+}
+.box-left-2 h2 {
+  text-align: left;
+  width: 70%;
+}
+.box-left-2 p {
+  width: 70%;
+}
+/* End .page-2 */
+/* Start .list-3 (css trang 3) */
+.list-3 {
+  background: #f8ebc9;
+  margin-bottom: 150px;
+}
+.page-3 {
+  padding: 100px 0;
+}
+.main-box-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text-center {
+  text-align: center;
+}
+.main-box-3 p {
+  color: #586863;
+  text-align: center;
+  font-family: "Manrope";
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 30px;
+  width: 60%;
+}
+/* End css page 3 */
+/* Start .footer */
+.footer {
+  background: #0e1412;
+}
+.footer {
+  width: 100%;
+}
+.footer-info {
+  display: flex;
+  gap: 70px;
+  /* align-items: stretch; */
+  padding: 100px 0;
+  border-bottom: 2px solid #313d39;
+}
+.left-info {
+  width: 100%;
+  display: flex;
+  gap: 70px;
+  justify-content: flex-start;
+}
+.just-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.just-info h4 {
+  color: #fff;
+  font-family: "Manrope";
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 30px;
+}
+.just-info p {
+  color: #beccc7;
+  font-family: "Manrope";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 28px;
+}
+.just-info .address {
+  color: #beccc7;
+  font-family: "Manrope";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 28px;
+}
+.container-final {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.text-white {
+  color: #fff;
+}
+.text-gray {
+  color: #beccc7;
+  font-family: "Manrope";
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 24px;
+}
+.footer-left {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+.container-final .logo {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+.map-container {
+  display: flex;
+}
+/* End */

@@ -1,0 +1,25 @@
+@media screen and (max-width: 575.98px) {
+  .wrapper-header {
+    max-width: 100%;
+    margin: 0 20px;
+  }
+  .wrapper-header header.header {
+    width: 100%;
+  }
+  .header .left-header {
+    display: none;
+  }
+
+  /* .menu-toggle {
+    display: block;
+    font-size: 2.8rem;
+    cursor: pointer;
+  } */
+
+  .wrapper-header .header {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 15px; */
+  }
+  /* End .header */
+}
