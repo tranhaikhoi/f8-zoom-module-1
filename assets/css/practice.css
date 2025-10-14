@@ -100,6 +100,11 @@ html {
   line-height: 32px;
   color: #0e1412;
 }
+.container-header .header .menu-toggle {
+  display: none;
+}
+/* End .header */
+/* Start .page-1 */
 .hero-section {
   width: 100%;
   height: 100%;
@@ -118,6 +123,10 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.box-1 {
+  display: flex;
+  flex-direction: column;
 }
 .pd-top-bottom {
   padding-top: 212px;
@@ -180,6 +189,7 @@ ul.job-list li {
   gap: 30px;
   width: 100%;
   height: 100%;
+  display: block;
 }
 .job-item .personal {
   padding: 10px 40px;
@@ -197,14 +207,15 @@ ul.job-list li {
   font-weight: 700;
   line-height: 32px;
 }
-.job-item {
-  display: block;
+.job-list .job-item img:hover {
+  transform: scale(1.05);
 }
 .job-item img {
   width: 100%;
   height: 100%;
   display: block;
   object-fit: cover;
+  transition: transform 0.4s ease;
 }
 .sub-heading {
   color: #586863;
