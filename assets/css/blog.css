@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Rajdhani:wght@300;400;500;600;700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Rajdhani:wght@300;400;500;600;700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Gothic+A1&family=Manrope:wght@200..800&family=Rajdhani:wght@300;400;500;600;700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 body {
   box-sizing: border-box;
 }
@@ -31,6 +31,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* padding: 20px 0; */
   padding-block: 20px;
   padding-right: 15px;
 }
@@ -155,13 +156,12 @@ a {
 .container-header .header .close-menu {
   display: none;
 }
-
 /* End .header */
 /* Start .page-1 */
 .hero-section {
   width: 100%;
   height: 100%;
-  background: #f8ebc9;
+  background: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -171,174 +171,233 @@ a {
   margin-left: 135px;
   margin-right: 135px;
 }
-.main-box {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.box-1 {
-  display: flex;
-  flex-direction: column;
-}
-.pd-top-bottom {
-  padding-top: 212px;
+.page-1 {
+  padding-top: 150px;
   padding-bottom: 100px;
+  width: 100%;
+}
+.contain-box {
+  display: flex;
+  flex-direction: column;
+  /* padding: 60px 0; */
+}
+.contain-box .heading-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
 }
 h1 {
   color: #0e1412;
-  text-align: center;
   font-family: "Roboto Slab";
-  font-size: 6rem;
+  font-size: 60px;
   font-weight: 800;
   line-height: 70px;
+  width: 40%;
 }
-.text-width {
-  width: 70%;
+.heading-info .list-select {
+  display: flex;
+  gap: 20px;
 }
-.text-width-h1 {
-  width: 60%;
-}
-p {
-  color: #0e1412;
+.heading-info .list-select a {
+  background: #333;
+  padding: 15px 35px;
+  border: none;
   text-align: center;
+  /* display: inline-block; */
+  color: white;
   font-family: "Manrope";
   font-size: 1.8rem;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 30px;
 }
-.mb-70 {
-  margin-bottom: 70px;
+.heading-info .list-select a:hover {
+  background: #fd6038;
 }
-.list-2 {
-  background: #fff;
+.heading-info .list-select a:first-child {
+  background: #fd6038;
 }
-.page-2 {
-  padding: 150px 0;
-}
-ul.job-list {
-  list-style: none;
+ul.list-blog {
   display: flex;
-  flex-wrap: wrap;
-  text-align: center;
   justify-content: space-between;
   gap: 30px;
-  padding: 0;
   margin: 0;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+  width: 100%;
 }
-ul.job-list li {
+ul.list-blog li {
   flex: 1 1 calc(33.333% - 30px);
+  overflow: hidden;
   box-sizing: border-box;
-  aspect-ratio: 1 / 1;
-  overflow: hidden;
 }
-.job-item {
-  border-radius: 10px;
-  background: #fff;
-  position: relative;
-  overflow: hidden;
+ul.list-blog li.item-blog a img {
+  aspect-ratio: 1 / 1;
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+ul.list-blog li.item-blog:hover img {
+  transform: scale(1.05);
+}
+ul.list-blog li.item-blog {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  width: 100%;
-  height: 100%;
-  display: block;
-  cursor: pointer;
+  overflow: hidden;
+  /* padding: 40px 30px; */
 }
-.job-item .personal {
-  padding: 10px 40px;
-  background: #fff;
-  color: #0e1412;
-  position: absolute;
-  z-index: 5;
-  left: 10px;
-  bottom: 10px;
-  right: 10px;
-  display: inline-block;
-  text-align: center;
+.item-blog .detail-item {
+  display: flex;
+  gap: 5px;
+}
+.item-blog .detail-item .name-author {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.item-blog .detail-item .name-author p {
+  font-family: "Manrope";
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 30px;
+}
+.item-blog .detail-item .name-author span {
+  font-family: "Manrope";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 28px;
+}
+.list-blog .item-blog .blog-name {
   font-family: "Manrope";
   font-size: 2.2rem;
   font-weight: 700;
   line-height: 32px;
 }
-.job-list .job-item img:hover {
-  transform: scale(1.05);
-}
-.job-item img {
-  width: 100%;
-  height: 100%;
+
+.list-blog .item-blog .blog-name span > a {
+  font-family: "Manrope";
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 30px;
   display: block;
-  object-fit: cover;
-  transition: transform 0.4s ease;
 }
-.sub-heading {
-  color: #586863;
+
+.list-blog .item-blog .blog-name span:hover {
+  color: #fd6038;
+}
+/* Start .page-2 */
+.page-2 {
+  background: #017848;
+  padding: 100px 300px;
+  width: 100%;
+}
+.contain-box-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+}
+
+.contain-box-2 .sub-heading {
+  color: #fff;
   text-align: center;
   font-family: "Roboto Slab";
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 30px;
 }
-h2 {
-  color: #0e1412;
-  text-align: center;
+
+.contain-box-2 h2 {
   font-family: "Roboto Slab";
   font-size: 4.2rem;
   font-weight: 700;
   line-height: 52px;
+  color: #fff;
+  text-align: center;
 }
-.job-item .personal:hover {
+.box-input {
+  display: flex;
+  gap: 10px;
+  /* height: 40%; */
+  width: 60%;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+input[type="email"] {
+  width: 60%;
+  padding: 15px 0;
+  padding-left: 15px;
+  font-family: "Manrope";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 28px;
+}
+.contain-box-2 button {
+  padding: 15px 30px;
+  width: 40%;
+  font-family: "Manrope";
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 30px;
+}
+.contain-box-2 button:hover {
   background: #fd6038;
+  color: white;
 }
-.job-item .personal:hover a {
+.contain-box-2 p {
+  font-family: "Manrope";
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 30px;
   color: #fff;
 }
-/* Start .list-3 */
-.list-3 {
-  background: #017848;
+.contain-box-2 p > span {
+  font-family: "Manrope";
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 30px;
+  color: #fed464;
 }
+/* End.page-2 */
+/* Start .page-3 */
 .page-3 {
   padding: 100px 0;
 }
-.main-box-3 {
+.contain-box-3 {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 30px;
+  gap: 50px;
 }
-.contain-info-p3 {
+.page-3 .list-page {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  gap: 20px;
+  justify-content: center;
 }
-.text-width {
-  width: 45%;
-}
-
-.text-color {
+.page-3 .list-page .item-number {
+  padding: 10px 20px;
+  background: #333;
   color: #fff;
+  text-align: center;
   font-family: "Manrope";
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 30px;
+  cursor: pointer;
 }
-.text-color-black {
-  color: #333;
-  font-family: "Manrope";
-  font-size: 1.8rem;
-  font-weight: 600;
-  line-height: 30px;
-}
-button {
-  padding: 15px 35px;
-  background: #fcfbfb;
-  color: #fff;
-}
-button:hover {
+.page-3 .list-page .item-number:first-child {
   background: #fd6038;
-  color: #fff;
 }
-/* End .list-3 */
+.page-3 .list-page .item-number:hover {
+  background: #fd6038;
+}
 /* Start .footer */
 .footer {
   background: #0e1412;

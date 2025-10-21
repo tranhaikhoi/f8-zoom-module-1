@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
+    <link rel="icon" type="image/svg" href="./assets/img/Vector.svg" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -13,34 +14,75 @@
     />
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/contact.css" />
+    <link rel="stylesheet" href="./assets/css/reponsive-contact.css" />
   </head>
   <body>
     <div class="wrapper-header">
       <div class="container-header">
+        <!-- Start .header -->
         <header class="header">
-          <!-- logo -->
+          <label for="menu-toggle" class="menu-toggle"
+            ><i class="fa-solid fa-bars"></i
+          ></label>
           <div class="left-header">
+            <!-- logo -->
             <div class="logo">
-              <a href="./" class="logo-link">
+              <a href="#" class="logo-link">
                 <img src="./assets/img/Vector.svg" alt="logo Law" />
               </a>
-              <p class="text-just">Justice</p>
-              <p class="text-law">Law Firm</p>
+              <p class="text-just text-black">Justice</p>
+              <p class="text-law text-black">Law Firm</p>
             </div>
             <!-- navigation -->
-            <nav>
+            <input type="checkbox" id="menu-toggle" hidden />
+            <label for="menu-toggle" class="menu-overlay"></label>
+            <nav id="nav-menu">
+              <label for="menu-toggle" class="close-menu">✕</label>
               <ul class="navigation">
-                <li class="muti-menu">
+                <li class="home-hov">
                   <a href="index.html" target="_blank">Home</a>
                 </li>
-                <li class="muti-menu">
+                <li class="multi-menu">
                   <a href="About2.html" target="_blank">About</a>
+                  <ul>
+                    <li><a href="#!">Item1</a></li>
+                    <li><a href="#!">Item2</a></li>
+                    <li><a href="#!">Item3</a></li>
+                    <li><a href="#!">Item4</a></li>
+                    <li><a href="#!">Item5</a></li>
+                  </ul>
                 </li>
-                <li class="muti-menu">
+                <li class="multi-menu">
                   <a href="practice-area.html" target="_blank">Practice</a>
+                  <ul>
+                    <li><a href="#!">Divorce</a></li>
+                    <li><a href="#!">Personal Injury</a></li>
+                    <li><a href="#!">Employment</a></li>
+                    <li><a href="#!">Immigration</a></li>
+                    <li><a href="#!">Family</a></li>
+                    <li><a href="#!">Property</a></li>
+                  </ul>
                 </li>
-                <li><a href="">Attorneys</a></li>
-                <li class="muti-menu"><a href="./">Pages</a></li>
+                <li class="multi-menu">
+                  <a href="#!">Attorneys</a>
+                  <ul>
+                    <li><a href="#!">Item1</a></li>
+                    <li><a href="#!">Item2</a></li>
+                    <li><a href="#!">Item3</a></li>
+                    <li><a href="#!">Item4</a></li>
+                    <li><a href="#!">Item5</a></li>
+                  </ul>
+                </li>
+                <li class="multi-menu">
+                  <a href="#!">Pages</a>
+                  <ul>
+                    <li><a href="blog.html" target="_blank">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#!">Item3</a></li>
+                    <li><a href="#!">Item4</a></li>
+                    <li><a href="#!">Item5</a></li>
+                  </ul>
+                </li>
               </ul>
             </nav>
           </div>
@@ -51,6 +93,7 @@
         </header>
       </div>
     </div>
+    <!-- End .wrapper-header -->
     <!-- Start .hero-section( nội dung chính từ header xuống dưới) -->
     <div class="hero-section">
       <!-- Start .container -->
@@ -72,28 +115,35 @@
                 </div>
                 <div class="container-info">
                   <div class="address">
-                    <img
-                      src="assets/img/img-contact/address.svg"
-                      alt="icon địa chỉ"
-                    />
+                    <a href="#!">
+                      <img
+                        src="assets/img/img-contact/address.svg"
+                        alt="icon địa chỉ"
+                    /></a>
                     <p>
-                      34 Street Name, City Name <br />
-                      Here, United States.
+                      <a href="#!"
+                        >34 Street Name, City Name <br />
+                        Here, United States.</a
+                      >
                     </p>
                   </div>
                   <div class="phone">
-                    <img
-                      src="assets/img/img-contact/phone-call.svg"
-                      alt="icon điện thoại"
-                    />
-                    <p>+1 (222) 345 6789</p>
+                    <a href="tel:+1 (222) 345 6789"
+                      ><img
+                        src="assets/img/img-contact/phone-call.svg"
+                        alt="icon điện thoại"
+                    /></a>
+                    <p><a href="tel:+1 (222) 345 6789">+1 (222) 345 6789</a></p>
                   </div>
                   <div class="email-info">
-                    <img
-                      src="assets/img/img-contact/email.svg"
-                      alt="icon hộp thư"
-                    />
-                    <p>info@mywebsite.com</p>
+                    <a href="mailto:info@mywebsite.com">
+                      <img
+                        src="assets/img/img-contact/email.svg"
+                        alt="icon hộp thư"
+                    /></a>
+                    <p>
+                      <a href="mailto:info@mywebsite.com">info@mywebsite.com</a>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -117,7 +167,7 @@
                     cols="30"
                   ></textarea>
                 </div>
-                <button>Send Message</button>
+                <button><a href="#!">Send Message</a></button>
               </div>
               <!-- End .box-right -->
             </div>
@@ -129,77 +179,96 @@
       <!-- End .container .page-1 -->
     </div>
     <!-- End .hero-section -->
-  </body>
-  <!-- Start .hero-section .footer -->
-  <div class="hero-section footer">
-    <!-- Start .container.footer -->
-    <div class="container footer">
-      <main>
-        <!-- start .main-box-final -->
-        <div class="main-box-final">
-          <div class="box-final">
-            <div class="main-page-final">
-              <div class="footer-info">
-                <div class="left-info">
-                  <div class="just-info">
-                    <h4>Justice</h4>
-                    <p>Privacy Policy</p>
-                    <p>Terms & Conditions</p>
-                    <p>Cookie Preferences</p>
+    <!-- Start .hero-section .footer -->
+    <div class="hero-section footer">
+      <!-- Start .container.footer -->
+      <div class="container footer">
+        <main>
+          <!-- start .main-box-final -->
+          <div class="main-box-final">
+            <div class="box-final">
+              <div class="main-page-final">
+                <div class="footer-info">
+                  <div class="left-info">
+                    <div class="just-info">
+                      <h4>Justice</h4>
+                      <p><a href="#!">Privacy Policy</a></p>
+                      <p><a href="#!">Terms & Conditions</a></p>
+                      <p><a href="#!">Cookie Preferences</a></p>
+                    </div>
+                    <div class="just-info">
+                      <h4>Pages</h4>
+                      <p><a href="index.html" target="_blank">Home</a></p>
+                      <p><a href="About2.html" target="_blank">About</a></p>
+                      <p>
+                        <a href="practice-area.html" target="_blank"
+                          >Practice Areas</a
+                        >
+                      </p>
+                      <p><a href="#!">Attorneys</a></p>
+                    </div>
+                    <div class="just-info">
+                      <h4>Justice</h4>
+                      <span class="address">
+                        <a
+                          href="https://www.google.com/maps?ll=10.773375,106.700424&z=15&t=m&hl=vi&gl=US&mapclient=embed"
+                          >50 Harrison Street, PH Suite 445<br />
+                          Hoboken, NJ 07030 <br
+                        /></a>
+
+                        <a href="tel:+000 1234567">(000)123-4567 </a>
+                        <a href="mailto:yourlawfirm22@gmail.com"
+                          >yourlawfirm22@gmail.com</a
+                        >
+                      </span>
+                    </div>
                   </div>
-                  <div class="just-info">
-                    <h4>Pages</h4>
-                    <p>Home</p>
-                    <p>About</p>
-                    <p>Practice Areas</p>
-                    <p>Attorneys</p>
-                  </div>
-                  <div class="just-info">
-                    <h4>Justice</h4>
-                    <span class="address">
-                      50 Harrison Street, PH Suite 445 <br />
-                      Hoboken, NJ 07030 <br />
-                      (000)123-4567 <br />
-                      yourlawfirm22@gmail.com
-                    </span>
+                  <div class="map-container">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.502654138804!2d106.70042351526028!3d10.773374692322998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f470b4c52f7%3A0x5e4bbd7d83bcb4a5!2zMjM2IE5ndXnhu4VuIFRoaeG7h24sIFBoxrDhu51uZyAxLCBRdeG6rW4gMSwgSOG7kyBDaMOtIE1pbmggQ2jDrSBNaW5oLCBWaWV0bmFt!5e0!3m2!1svi!2s!4v1697799999999!5m2!1svi!2s"
+                      allowfullscreen=""
+                      loading="lazy"
+                    >
+                    </iframe>
                   </div>
                 </div>
-                <div class="map-container">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.502654138804!2d106.70042351526028!3d10.773374692322998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f470b4c52f7%3A0x5e4bbd7d83bcb4a5!2zMjM2IE5ndXnhu4VuIFRoaeG7h24sIFBoxrDhu51uZyAxLCBRdeG6rW4gMSwgSOG7kyBDaMOtIE1pbmggQ2jDrSBNaW5oLCBWaWV0bmFt!5e0!3m2!1svi!2s!4v1697799999999!5m2!1svi!2s"
-                    allowfullscreen=""
-                    loading="lazy"
-                  >
-                  </iframe>
+                <div class="container-final">
+                  <div class="logo">
+                    <a href="#" class="logo-link">
+                      <img src="./assets/img/buatrang.svg" alt="logo Law" />
+                    </a>
+                    <p class="text-just text-white">Justice</p>
+                    <p class="text-law text-white">Law Firm</p>
+                  </div>
                 </div>
-              </div>
-              <div class="container-final">
-                <div class="logo">
-                  <a href="./" class="logo-link">
-                    <img src="./assets/img/buatrang.svg" alt="logo Law" />
-                  </a>
-                  <p class="text-just text-white">Justice</p>
-                  <p class="text-law text-white">Law Firm</p>
-                </div>
-              </div>
-              <div class="footer-left">
-                <span class="text-gray"
-                  >Copyright © 2022 UI HUT All Rights Reserved
-                </span>
-                <div class="contain-links">
-                  <a href="">
-                    <img src="assets/img/Social.svg" alt="icon social" />
-                  </a>
+                <div class="footer-left">
+                  <span class="text-gray"
+                    >Copyright © 2022 UI HUT All Rights Reserved
+                  </span>
+                  <div class="contain-links">
+                    <a href="https://www.facebook.com/" target="_blank"
+                      ><i class="fa-brands fa-facebook-f icon-app"></i
+                    ></a>
+                    <a href="https://www.linkedin.com/" target="_blank"
+                      ><i class="fa-brands fa-linkedin-in icon-app"></i
+                    ></a>
+                    <a href="https://x.com/" target="_blank"
+                      ><i class="fa-brands fa-twitter icon-app"></i
+                    ></a>
+                    <a href="https://www.instagram.com/" target="_blank"
+                      ><i class="fa-brands fa-instagram icon-app"></i
+                    ></a>
+                  </div>
                 </div>
               </div>
             </div>
+            <!-- main-page-final -->
           </div>
-          <!-- main-page-final -->
-        </div>
-        <!-- End .box-final -->
-      </main>
+          <!-- End .box-final -->
+        </main>
+      </div>
+      <!-- End .container .footer -->
     </div>
-    <!-- End .container .footer -->
-  </div>
-  <!-- End .hero-section footer -->
+    <!-- End .hero-section footer -->
+  </body>
 </html>

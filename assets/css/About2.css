@@ -7,6 +7,11 @@ body {
 html {
   font-size: 10px;
 }
+a {
+  color: black;
+  outline: none;
+  user-select: none;
+}
 .wrapper-header {
   position: fixed;
   top: 0;
@@ -26,7 +31,9 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  /* padding: 20px 0; */
+  padding-block: 20px;
+  padding-right: 15px;
 }
 
 .header .left-header {
@@ -52,7 +59,7 @@ html {
 }
 .left-header .navigation {
   display: flex;
-  gap: 40px;
+  gap: 60px;
   color: #0e1412;
 }
 .left-header .navigation a {
@@ -81,6 +88,50 @@ html {
   filter: invert(48%) sepia(78%) saturate(4191%) hue-rotate(347deg)
     brightness(101%) contrast(97%);
 }
+.navigation li {
+  position: relative;
+}
+.navigation li ul {
+  position: absolute;
+  top: 100%;
+  left: -50%;
+  background-color: #fff;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  width: 200%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: none;
+  z-index: 999;
+}
+.navigation li:hover > ul {
+  display: block;
+}
+.navigation li ul li {
+  display: block;
+  padding: 0;
+}
+.navigation li ul li a {
+  display: block;
+  padding: 10px 16px;
+  color: #0e1412;
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.navigation li ul {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+.navigation li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
 .contact a {
   font-family: "Manrope";
   font-size: 1.6rem;
@@ -101,6 +152,9 @@ html {
   color: #0e1412;
 }
 .container-header .header .menu-toggle {
+  display: none;
+}
+.container-header .header .close-menu {
   display: none;
 }
 /* End .header */
@@ -276,8 +330,8 @@ h3 {
   z-index: 10;
 }
 .box-press-on {
-  width: 30%;
-  height: 50%;
+  width: 50%;
+  height: 30%;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -343,6 +397,7 @@ h3 {
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
+  flex: 1;
 }
 .just-info h4 {
   color: #fff;
@@ -351,7 +406,7 @@ h3 {
   font-weight: 700;
   line-height: 30px;
 }
-.just-info p {
+.just-info p a {
   color: #beccc7;
   font-family: "Manrope";
   font-size: 1.6rem;
@@ -364,6 +419,15 @@ h3 {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.just-info .address a {
+  color: #beccc7;
+}
+.just-info a:hover {
+  color: #fd6038;
 }
 .container-final {
   display: flex;
@@ -396,4 +460,20 @@ h3 {
 .map-container {
   display: flex;
 }
-/* End */
+.contain-links {
+  display: flex;
+  gap: 10px;
+}
+.contain-links .icon-app {
+  width: 30px;
+  height: 30px;
+  background: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contain-links .icon-app:hover {
+  background: #fd6038;
+}
+/* End .footer */

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Practice Area</title>
+    <link rel="icon" type="image/svg" href="./assets/img/Vector.svg" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -13,35 +14,74 @@
     />
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/practice.css" />
-    <link rel="stylesheet" href="assets/css/reponsive-practice.css" />
+    <link rel="stylesheet" href="./assets/css/reponsive-practice.css" />
   </head>
   <body>
     <div class="wrapper-header">
       <div class="container-header">
         <header class="header">
-          <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
-          <!-- logo -->
+          <label for="menu-toggle" class="menu-toggle"
+            ><i class="fa-solid fa-bars"></i
+          ></label>
+
           <div class="left-header">
+            <!-- logo -->
             <div class="logo">
-              <a href="./" class="logo-link">
+              <a href="#" class="logo-link">
                 <img src="./assets/img/Vector.svg" alt="logo Law" />
               </a>
               <p class="text-just">Justice</p>
               <p class="text-law">Law Firm</p>
             </div>
             <!-- navigation -->
-            <nav>
+            <input type="checkbox" id="menu-toggle" hidden />
+            <label for="menu-toggle" class="menu-overlay"></label>
+            <nav id="nav-menu">
+              <label for="menu-toggle" class="close-menu">✕</label>
               <ul class="navigation">
-                <li class="muti-menu">
+                <li class="home-hov">
                   <a href="index.html" target="_blank">Home</a>
                 </li>
-                <li class="muti-menu">
+                <li class="multi-menu">
                   <a href="About2.html" target="_blank">About</a>
+                  <ul>
+                    <li><a href="#!">Item1</a></li>
+                    <li><a href="#!">Item2</a></li>
+                    <li><a href="#!">Item3</a></li>
+                    <li><a href="#!">Item4</a></li>
+                    <li><a href="#!">Item5</a></li>
+                  </ul>
                 </li>
-                <li class="muti-menu"><a href="./">Practice</a></li>
-                <li><a href="">Attorneys</a></li>
-                <li class="muti-menu">
-                  <a href="contact.html" target="_blank">Pages</a>
+                <li class="multi-menu">
+                  <a href="#">Practice</a>
+                  <ul>
+                    <li><a href="#!">Divorce</a></li>
+                    <li><a href="#!">Personal Injury</a></li>
+                    <li><a href="#!">Employment</a></li>
+                    <li><a href="#!">Immigration</a></li>
+                    <li><a href="#!">Family</a></li>
+                    <li><a href="#!">Property</a></li>
+                  </ul>
+                </li>
+                <li class="multi-menu">
+                  <a href="#!">Attorneys</a>
+                  <ul>
+                    <li><a href="#!">Item1</a></li>
+                    <li><a href="#!">Item2</a></li>
+                    <li><a href="#!">Item3</a></li>
+                    <li><a href="#!">Item4</a></li>
+                    <li><a href="#!">Item5</a></li>
+                  </ul>
+                </li>
+                <li class="multi-menu">
+                  <a href="#!">Pages</a>
+                  <ul>
+                    <li><a href="blog.html" target="_blank">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#!">Item3</a></li>
+                    <li><a href="#!">Item4</a></li>
+                    <li><a href="#!">Item5</a></li>
+                  </ul>
                 </li>
               </ul>
             </nav>
@@ -97,7 +137,9 @@
                     src="assets/img/img-practice/personal.png"
                     alt="ảnh personal"
                   />
-                  <div class="personal">Personal Injury Law</div>
+                  <div class="personal">
+                    <a href="#!">Personal Injury Law</a>
+                  </div>
                 </div>
               </li>
               <li>
@@ -106,7 +148,7 @@
                     src="assets/img/img-practice/employment.png"
                     alt="ảnh personal"
                   />
-                  <div class="personal">Employment Law</div>
+                  <div class="personal"><a href="#!">Employment Law</a></div>
                 </div>
               </li>
               <li>
@@ -115,7 +157,7 @@
                     src="assets/img/img-practice/imigration.png"
                     alt="ảnh personal"
                   />
-                  <div class="personal">Immigration Law</div>
+                  <div class="personal"><a href="#!">Immigration Law</a></div>
                 </div>
               </li>
               <li>
@@ -124,7 +166,7 @@
                     src="assets/img/img-practice/family.png"
                     alt="ảnh personal"
                   />
-                  <div class="personal">Family Law</div>
+                  <div class="personal"><a href="#!">Family Law</a></div>
                 </div>
               </li>
               <li>
@@ -133,7 +175,7 @@
                     src="assets/img/img-practice/divorce.png"
                     alt="ảnh personal"
                   />
-                  <div class="personal">Divorce Law</div>
+                  <div class="personal"><a href="#!">Divorce Law</a></div>
                 </div>
               </li>
               <li>
@@ -142,7 +184,7 @@
                     src="assets/img/img-practice/property.png"
                     alt="ảnh personal"
                   />
-                  <div class="personal">Property Law</div>
+                  <div class="personal"><a href="#!">Property Law</a></div>
                 </div>
               </li>
             </ul>
@@ -169,7 +211,9 @@
                 your rights!
               </p>
             </div>
-            <button class="text-color-black">Get a Consultations</button>
+            <button class="text-color-black">
+              <a href="#!">Get a Consultations</a>
+            </button>
           </div>
           <!-- End .main-box -->
         </main>
@@ -177,7 +221,6 @@
       <!-- End .container .page-3 -->
     </div>
     <!-- End hero-section p3 -->
-    <!-- Start .hero-section .footer -->
     <div class="hero-section footer">
       <!-- Start .container.footer -->
       <div class="container footer">
@@ -190,24 +233,30 @@
                   <div class="left-info">
                     <div class="just-info">
                       <h4>Justice</h4>
-                      <p>Privacy Policy</p>
-                      <p>Terms & Conditions</p>
-                      <p>Cookie Preferences</p>
+                      <p><a href="#!">Privacy Policy</a></p>
+                      <p><a href="#!">Terms & Conditions</a></p>
+                      <p><a href="#!">Cookie Preferences</a></p>
                     </div>
                     <div class="just-info">
                       <h4>Pages</h4>
-                      <p>Home</p>
-                      <p>About</p>
-                      <p>Practice Areas</p>
-                      <p>Attorneys</p>
+                      <p><a href="index.html">Home</a></p>
+                      <p><a href="About2.html">About</a></p>
+                      <p><a href="practice-area.html">Practice Areas</a></p>
+                      <p><a href="#!">Attorneys</a></p>
                     </div>
                     <div class="just-info">
                       <h4>Justice</h4>
                       <span class="address">
-                        50 Harrison Street, PH Suite 445 <br />
-                        Hoboken, NJ 07030 <br />
-                        (000)123-4567 <br />
-                        yourlawfirm22@gmail.com
+                        <a
+                          href="https://www.google.com/maps?ll=10.773375,106.700424&z=15&t=m&hl=vi&gl=US&mapclient=embed"
+                          >50 Harrison Street, PH Suite 445<br />
+                          Hoboken, NJ 07030 <br
+                        /></a>
+
+                        <a href="tel:+000 1234567">(000)123-4567 </a>
+                        <a href="mailto:yourlawfirm22@gmail.com"
+                          >yourlawfirm22@gmail.com</a
+                        >
                       </span>
                     </div>
                   </div>
@@ -222,7 +271,7 @@
                 </div>
                 <div class="container-final">
                   <div class="logo">
-                    <a href="./" class="logo-link">
+                    <a href="#" class="logo-link">
                       <img src="./assets/img/buatrang.svg" alt="logo Law" />
                     </a>
                     <p class="text-just text-white">Justice</p>
@@ -234,9 +283,18 @@
                     >Copyright © 2022 UI HUT All Rights Reserved
                   </span>
                   <div class="contain-links">
-                    <a href="">
-                      <img src="assets/img/Social.svg" alt="icon social" />
-                    </a>
+                    <a href="https://www.facebook.com/" target="_blank"
+                      ><i class="fa-brands fa-facebook-f icon-app"></i
+                    ></a>
+                    <a href="https://www.linkedin.com/" target="_blank"
+                      ><i class="fa-brands fa-linkedin-in icon-app"></i
+                    ></a>
+                    <a href="https://x.com/" target="_blank"
+                      ><i class="fa-brands fa-twitter icon-app"></i
+                    ></a>
+                    <a href="https://www.instagram.com/" target="_blank"
+                      ><i class="fa-brands fa-instagram icon-app"></i
+                    ></a>
                   </div>
                 </div>
               </div>

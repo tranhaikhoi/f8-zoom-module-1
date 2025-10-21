@@ -1,11 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Rajdhani:wght@300;400;500;600;700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Rajdhani:wght@300;400;500;600;700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Gothic+A1&family=Manrope:wght@200..800&family=Rajdhani:wght@300;400;500;600;700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 body {
   box-sizing: border-box;
 }
 html {
   font-size: 10px;
+}
+a {
+  color: black;
+  outline: none;
+  user-select: none;
 }
 .wrapper-header {
   position: fixed;
@@ -26,12 +31,14 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  /* padding: 20px 0; */
+  padding: 20px;
+  padding-right: 15px;
 }
 
 .header .left-header {
   display: flex;
-  gap: 240px;
+  gap: 210px;
 }
 
 .left-header .logo {
@@ -42,9 +49,14 @@ html {
 .logo .text-just {
   font-size: 2.4rem;
   font-weight: 700;
+  text-align: left;
+}
+.text-black {
+  color: black;
 }
 .logo .text-law {
   font-size: 1.4rem;
+  text-align: center;
 }
 .left-header nav {
   display: flex;
@@ -52,17 +64,16 @@ html {
 }
 .left-header .navigation {
   display: flex;
-  gap: 40px;
+  gap: 60px;
   color: #0e1412;
 }
 .left-header .navigation a {
   font-family: "Manrope";
-  font-size: 16px;
-  font-style: normal;
+  font-size: 1.6rem;
   font-weight: 600;
   line-height: 28px;
 }
-.navigation .muti-menu::after {
+.navigation .multi-menu::after {
   content: "";
   display: inline-block;
   width: 8px;
@@ -72,14 +83,60 @@ html {
   margin-left: 5px;
 }
 
-.navigation .muti-menu:hover {
+.navigation .multi-menu:hover {
   color: #fd6038;
 }
-
-.navigation .muti-menu:hover::after {
+.navigation .home-hov:hover {
+  color: #fd6038;
+}
+.navigation .multi-menu:hover::after {
   transform: rotate(180deg);
   filter: invert(48%) sepia(78%) saturate(4191%) hue-rotate(347deg)
     brightness(101%) contrast(97%);
+}
+.navigation li {
+  position: relative;
+}
+.navigation li ul {
+  position: absolute;
+  top: 100%;
+  left: -50%;
+  background-color: #fff;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  width: 200%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: none;
+  z-index: 999;
+}
+.navigation li:hover > ul {
+  display: block;
+}
+.navigation li ul li {
+  display: block;
+  padding: 0;
+}
+.navigation li ul li a {
+  display: block;
+  padding: 10px 16px;
+  color: #0e1412;
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.navigation li ul {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+.navigation li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 .contact a {
   font-family: "Manrope";
@@ -100,6 +157,14 @@ html {
   line-height: 32px;
   color: #0e1412;
 }
+.container-header .header .menu-toggle {
+  display: none;
+}
+.container-header .header .close-menu {
+  display: none;
+}
+/* End .header */
+/* Start .page-1 (bắt dầu css phần nội dung từ đây) */
 .hero-section {
   width: 100%;
   height: 100%;
@@ -200,6 +265,7 @@ button {
 button:hover {
   background: chocolate;
 }
+/* End .page-1 */
 /* Start .footer */
 .footer {
   background: #0e1412;
@@ -225,6 +291,7 @@ button:hover {
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
+  flex: 1;
 }
 .just-info h4 {
   color: #fff;
@@ -233,7 +300,7 @@ button:hover {
   font-weight: 700;
   line-height: 30px;
 }
-.just-info p {
+.just-info p a {
   color: #beccc7;
   font-family: "Manrope";
   font-size: 1.6rem;
@@ -246,6 +313,15 @@ button:hover {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.just-info .address a {
+  color: #beccc7;
+}
+.just-info a:hover {
+  color: #fd6038;
 }
 .container-final {
   display: flex;
@@ -277,5 +353,21 @@ button:hover {
 }
 .map-container {
   display: flex;
+}
+.contain-links {
+  display: flex;
+  gap: 10px;
+}
+.contain-links .icon-app {
+  width: 30px;
+  height: 30px;
+  background: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contain-links .icon-app:hover {
+  background: #fd6038;
 }
 /* End .footer */

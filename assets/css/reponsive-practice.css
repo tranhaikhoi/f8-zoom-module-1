@@ -1,36 +1,301 @@
-@media screen and (max-width: 575.98px) {
+@media screen and (max-width: 767.98px) {
+  .container-header {
+    margin: 0;
+    width: 100%;
+  }
   .container-header .header .menu-toggle {
     display: block;
     font-size: 2.5rem;
   }
-  .wrapper-header {
-    max-width: 100vw;
-    margin: 0 20px;
+  .container-header .header .left-header nav {
     position: fixed;
     top: 0;
     left: 0;
+    bottom: 0;
+    width: 200px;
+    background: #333;
+    padding: 20px 0;
+    z-index: 9999;
+    translate: -100%;
+    transition: translate 0.3s;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 50px;
   }
-  .wrapper-header header.header {
-    width: 535px;
+  .container-header .header .left-header nav ul {
+    display: block;
+  }
+  .container-header .header .left-header nav ul li a {
+    color: #fff;
+    display: block;
+    padding: 5px 15px;
+  }
+  .container-header .header .left-header nav ul li ul li a {
+    color: #333;
+    display: block;
+    /* padding: 0 5px; */
+    text-align: center;
+    margin-left: 20px;
+  }
+
+  .container-header .header .menu-overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: #0000007e;
+    z-index: 9989;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+  }
+  input[type="checkbox"]:checked ~ nav#nav-menu {
+    translate: 0;
+  }
+  .wrapper-header
+    .container-header
+    .header
+    input[type="checkbox"]:checked
+    ~ .menu-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+  .close-menu {
     position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    z-index: 9999;
+  }
+  input[type="checkbox"]:checked ~ nav#nav-menu .close-menu {
+    display: block;
+  }
+  .wrapper-header {
+    max-width: 100vw;
+    /* margin: 0 20px; */
+    position: fixed;
     top: 0;
     left: 0;
+    background: #f8ebc9;
   }
-  .header .left-header {
-    display: none;
-  }
-  .wrapper-header .header {
+  .wrapper-header header.header {
+    /* width: 100%; */
+    /* position: absolute;
+    top: 0;
+    left: 0; */
     display: flex;
     justify-content: space-between;
-    /* padding: 15px; */
+    /* padding-right: 0; */
+    padding: 30px 50px;
   }
+  .header .left-header .logo {
+    display: none;
+  }
+  /* End .header */
+  /* Start .page-1 */
+  .page-1 {
+    padding-top: 50px;
+  }
+  .page-1 .text-width {
+    width: 70%;
+  }
+  .container {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .main-box {
+    gap: 30px;
+  }
+  h1 {
+    font-family: "Roboto Slab";
+    font-size: 3rem;
+    line-height: 35px;
+  }
+  .box-1 .sub-heading {
+    font-family: "Roboto Slab";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 18px;
+  }
+  .pd-top-bottom {
+    padding-top: 90px;
+    padding-bottom: 40px;
+  }
+  /* End .page-1*/
+  /* Start .page-2 */
+  .page-2 {
+    padding: 50px 0;
+  }
+  .page-2 .sub-heading {
+    font-family: "Roboto Slab";
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 21px;
+  }
+  .page-2 h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 37px;
+  }
+  .page-2 p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 21px;
+  }
+  ul.job-list {
+    flex-direction: column;
+  }
+  .job-list .job-item .personal {
+    font-size: 1.9rem;
+    font-weight: 700;
+    line-height: 29px;
+  }
+  .page-2 .job-list .job-item .personal p.mb-70 {
+    margin-bottom: 40px;
+    width: 20%;
+  }
+  /* End .page-2 */
+  /* Start .page-3 */
+  .page-3 {
+    padding: 40px 50px;
+  }
+  .main-box-3 {
+    gap: 24px;
+  }
+  .page-3 .main-box-3 .sub-heading {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 17px;
+  }
+  .page-3 .main-box-3 p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 17px;
+  }
+  .page-3 .main-box-3 h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  .page-3 .main-box-3 button {
+    padding: 9px 20px;
+  }
+  .page-3 .main-box-3 .text-width {
+    width: 65%;
+  }
+  .page-3 .main-box-3 button {
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 18px;
+  }
+  /* End .page-3 */
+  /* Start .footer */
+  .left-info {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer-info {
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    gap: 20px;
+  }
+  .footer-left {
+    flex-direction: column;
+    gap: 10px;
+  }
+  /* End .footer */
+}
+
+@media screen and (max-width: 575.98px) {
+  .container-header {
+    margin: 0;
+    width: 100%;
+  }
+  .container-header .header .menu-toggle {
+    display: block;
+    font-size: 2.5rem;
+  }
+  .container-header .header .left-header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    background: #333;
+    padding: 20px 0;
+    z-index: 9999;
+    translate: -100%;
+    transition: translate 0.3s;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 50px;
+  }
+  .container-header .header .left-header nav ul {
+    display: block;
+  }
+  .container-header .header .left-header nav ul li a {
+    color: #fff;
+    display: block;
+    padding: 5px 15px;
+  }
+  .container-header .header .left-header nav ul li ul li a {
+    color: #333;
+    display: block;
+    /* padding: 0 5px; */
+    text-align: center;
+    margin-left: 20px;
+  }
+
+  .container-header .header .menu-overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: #0000007e;
+    z-index: 9989;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+  }
+  input[type="checkbox"]:checked ~ nav#nav-menu {
+    translate: 0;
+  }
+  .wrapper-header
+    .container-header
+    .header
+    input[type="checkbox"]:checked
+    ~ .menu-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+  .wrapper-header {
+    max-width: 100vw;
+    /* margin: 0 20px; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #f8ebc9;
+  }
+  .wrapper-header header.header {
+    /* width: 100%; */
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    display: flex;
+    justify-content: space-between;
+    /* padding-right: 0; */
+    padding: 20px;
+  }
+  .header .left-header .logo {
+    display: none;
+  }
+  /* End .header */
+  /* Start .page-1 */
   .page-1 .text-width {
     width: 85%;
   }
-
-  /* End .header */
-  /* Start .page-1 */
-
   .container {
     margin-left: 20px;
     margin-right: 20px;
