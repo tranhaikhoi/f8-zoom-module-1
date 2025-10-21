@@ -37,6 +37,12 @@
     text-align: center;
     margin-left: 20px;
   }
+  .navigation .muti-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .container-header .header .menu-overlay {
     display: block;
     position: fixed;
@@ -79,6 +85,7 @@
     left: 0;
     background: #f8ebc9;
   }
+
   .wrapper-header header.header {
     /* width: 100%; */
     /* position: absolute;
@@ -243,6 +250,11 @@
     ~ .menu-overlay {
     opacity: 1;
     visibility: visible;
+  }
+  .navigation .muti-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   .wrapper-header {
     max-width: 100vw;

@@ -22,6 +22,11 @@
     align-items: flex-start;
     padding-top: 50px;
   }
+  .navigation .multi-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   .container-header .header .left-header nav ul {
     display: block;
   }
@@ -232,6 +237,11 @@
     justify-content: flex-start;
     align-items: flex-start;
     padding-top: 50px;
+  }
+  .navigation .multi-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   .container-header .header .left-header nav ul {
     display: block;
