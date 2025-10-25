@@ -1286,6 +1286,12 @@
   }
   /* End .page-8 */
   /* Start .page-9 */
+  .accordion {
+    width: 75%;
+  }
+  .accordion-label {
+    gap: 15px;
+  }
   .box-9 .sub-heading {
     font-size: 1rem;
     line-height: 13px;
@@ -1355,6 +1361,9 @@
   button.read-more:hover {
     background: #fd6038;
   }
+  .main-page-4 .villa-detail .price {
+    color: #fd6038;
+  }
   .price:hover {
     color: #fd6038;
   }
@@ -1362,9 +1371,10 @@
     background: #f8ebc9;
     color: #fd6038;
   }
-  .latest-info .bt-8:hover {
-    color: #333;
+  .latest-info .bt-8 {
+    color: #fd6038;
   }
+
   .just-info a:hover {
     color: #beccc7;
   }

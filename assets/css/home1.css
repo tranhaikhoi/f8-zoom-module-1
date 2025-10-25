@@ -1182,7 +1182,7 @@ ul.list-latest li {
 .accordion-label {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   cursor: pointer;
   font-weight: bold;
   font-size: 2.2rem;
