@@ -1044,6 +1044,9 @@
   .container .box-bottom .choose {
     font-size: 1.2rem;
   }
+  .select-locate .icon-1 {
+    padding-top: 0.5px;
+  }
 
   .search-icon {
     width: 50px;
@@ -1109,7 +1112,7 @@
     line-height: 17px;
   }
   .page-2 .box-left-2 .read-more {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: 600;
     line-height: 30px;
   }
@@ -1381,5 +1384,12 @@
   .contain-links .icon-app:hover {
     background: #333;
   }
+  .circle-item:hover {
+    background-color: #e0e0e0;
+  }
+  .circle-active {
+    background-color: #e0e0e0;
+  }
+
   /* End xửu lý hover */
 }
