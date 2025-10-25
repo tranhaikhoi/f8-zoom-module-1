@@ -49,7 +49,7 @@ a {
 .logo .text-just {
   font-size: 2.4rem;
   font-weight: 700;
-  text-align: left;
+  cursor: pointer;
 }
 .text-black {
   color: black;
@@ -57,6 +57,7 @@ a {
 .logo .text-law {
   font-size: 1.4rem;
   text-align: center;
+  cursor: pointer;
 }
 .left-header nav {
   display: flex;
@@ -78,8 +79,9 @@ a {
   display: inline-block;
   width: 8px;
   height: 8px;
-  background: url("../img/arrow-down.svg") no-repeat center;
-  background-size: contain;
+  background-color: black;
+  -webkit-mask: url("../img/arrow-down.svg") no-repeat center;
+  mask: url("../img/arrow-down.svg") no-repeat center;
   margin-left: 5px;
 }
 

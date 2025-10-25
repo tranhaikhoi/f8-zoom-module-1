@@ -73,8 +73,9 @@ a {
   display: inline-block;
   width: 8px;
   height: 8px;
-  background: url("../img/arrow-down.svg") no-repeat center;
-  background-size: contain;
+  background-color: black;
+  -webkit-mask: url("../img/arrow-down.svg") no-repeat center;
+  mask: url("../img/arrow-down.svg") no-repeat center;
   margin-left: 5px;
 }
 
@@ -291,7 +292,7 @@ ul.list-blog li.item-blog {
 /* Start .page-2 */
 .page-2 {
   background: #017848;
-  padding: 100px 300px;
+  padding: 100px 200px;
   width: 100%;
 }
 .contain-box-2 {
@@ -332,7 +333,7 @@ ul.list-blog li.item-blog {
   outline: none;
 }
 input[type="email"] {
-  width: 60%;
+  width: 80%;
   padding: 15px 0;
   padding-left: 15px;
   font-family: "Manrope";

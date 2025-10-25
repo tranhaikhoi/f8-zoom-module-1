@@ -48,9 +48,11 @@ a {
 .logo .text-just {
   font-size: 2.4rem;
   font-weight: 700;
+  cursor: pointer;
 }
 .logo .text-law {
   font-size: 1.4rem;
+  cursor: pointer;
 }
 .left-header nav {
   display: flex;
@@ -72,8 +74,9 @@ a {
   display: inline-block;
   width: 8px;
   height: 8px;
-  background: url("../img/arrow-down.svg") no-repeat center;
-  background-size: contain;
+  background-color: black;
+  -webkit-mask: url("../img/arrow-down.svg") no-repeat center;
+  mask: url("../img/arrow-down.svg") no-repeat center;
   margin-left: 5px;
 }
 
@@ -176,10 +179,12 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 15px;
 }
 .box-1 {
   display: flex;
   flex-direction: column;
+  gap: 15px;
 }
 .pd-top-bottom {
   padding-top: 212px;
@@ -206,6 +211,9 @@ p {
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 30px;
+}
+.mt-20 {
+  margin-top: 20px;
 }
 .mb-70 {
   margin-bottom: 70px;
@@ -310,6 +318,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 10px;
 }
 .text-width {
   width: 45%;
