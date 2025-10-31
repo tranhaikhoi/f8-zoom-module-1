@@ -653,4 +653,16 @@
   h1 {
     width: 100%;
   }
+  .page-2 .contain-box-2 h2 {
+    width: 100%;
+  }
+  .page-2 {
+    padding: 40px 25px;
+  }
+  input[type="email"] {
+    width: 50%;
+  }
+  .contain-box-2 button {
+    padding: 8px 20px;
+  }
 }
