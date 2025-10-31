@@ -615,3 +615,21 @@
     background: #333;
   }
 }
+@media screen and (max-width: 440px) {
+  .text-width {
+    width: 100%;
+  }
+  .page-2 .box-left-2 p {
+    width: 100%;
+  }
+  .main-box-3 h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 37px;
+    font-family: "Roboto Slab";
+    width: 100%;
+  }
+  .list-3 .page-3 .main-box-3 p {
+    width: 100%;
+  }
+}

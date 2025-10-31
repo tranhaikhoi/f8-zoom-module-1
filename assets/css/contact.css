@@ -50,6 +50,7 @@ a {
   font-size: 2.4rem;
   font-weight: 700;
   cursor: pointer;
+  font-family: "Roboto Slab";
 }
 .text-black {
   color: black;
@@ -58,6 +59,7 @@ a {
   font-size: 1.4rem;
   text-align: center;
   cursor: pointer;
+  font-family: "Roboto Slab";
 }
 .left-header nav {
   display: flex;
@@ -84,11 +86,10 @@ a {
   mask: url("../img/arrow-down.svg") no-repeat center;
   margin-left: 5px;
 }
-
-.navigation .multi-menu:hover {
+.navigation .home-hov:hover {
   color: #fd6038;
 }
-.navigation .home-hov:hover {
+.navigation .multi-menu:hover {
   color: #fd6038;
 }
 .navigation .multi-menu:hover::after {
@@ -123,7 +124,7 @@ a {
 .navigation li ul li a {
   display: block;
   padding: 10px 16px;
-  color: #0e1412;
+  color: #fd6038;
   font-weight: 500;
   font-size: 1.4rem;
   text-decoration: none;

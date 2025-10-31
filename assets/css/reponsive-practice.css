@@ -656,3 +656,27 @@
     background: #333;
   }
 }
+
+@media screen and (max-width: 440px) {
+  .text-width-h1 {
+    width: 80%;
+  }
+  .page-1 .text-width {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 18px;
+    width: 90%;
+  }
+  .main-box {
+    gap: 10px;
+  }
+  .mt-20 {
+    margin-top: 5px;
+  }
+  .page-2 p {
+    width: 90%;
+  }
+  .page-3 .main-box-3 .text-width {
+    width: 100%;
+  }
+}
