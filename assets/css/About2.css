@@ -50,10 +50,12 @@ a {
   font-size: 2.4rem;
   font-weight: 700;
   cursor: pointer;
+  font-family: "Roboto Slab";
 }
 .logo .text-law {
   font-size: 1.4rem;
   cursor: pointer;
+  font-family: "Roboto Slab";
 }
 .left-header nav {
   display: flex;
@@ -85,7 +87,9 @@ a {
 .navigation .multi-menu:hover {
   color: #fd6038;
 }
-
+.navigation .home-hov:hover {
+  color: #fd6038;
+}
 .navigation .multi-menu:hover::after {
   transform: rotate(180deg);
   filter: invert(48%) sepia(78%) saturate(4191%) hue-rotate(347deg)
@@ -118,7 +122,7 @@ a {
 .navigation li ul li a {
   display: block;
   padding: 10px 16px;
-  color: #0e1412;
+  color: #fd6038;
   font-weight: 500;
   font-size: 1.4rem;
   text-decoration: none;

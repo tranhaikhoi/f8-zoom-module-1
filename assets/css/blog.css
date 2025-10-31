@@ -49,9 +49,11 @@ a {
 .logo .text-just {
   font-size: 2.4rem;
   font-weight: 700;
+  font-family: "Roboto Slab";
 }
 .logo .text-law {
   font-size: 1.4rem;
+  font-family: "Roboto Slab";
 }
 .left-header nav {
   display: flex;
@@ -240,7 +242,7 @@ ul.list-blog li.item-blog a img {
   object-fit: cover;
   transition: transform 0.3s ease;
 }
-ul.list-blog li.item-blog:hover img {
+ul.list-blog li.item-blog a img:hover {
   transform: scale(1.05);
 }
 ul.list-blog li.item-blog {

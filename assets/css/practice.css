@@ -49,10 +49,12 @@ a {
   font-size: 2.4rem;
   font-weight: 700;
   cursor: pointer;
+  font-family: "Roboto Slab";
 }
 .logo .text-law {
   font-size: 1.4rem;
   cursor: pointer;
+  font-family: "Roboto Slab";
 }
 .left-header nav {
   display: flex;
@@ -323,7 +325,9 @@ h2 {
 .text-width {
   width: 45%;
 }
-
+.text-color-1 {
+  color: #fff;
+}
 .text-color {
   color: #fff;
   font-family: "Manrope";

@@ -22,6 +22,9 @@
     margin-left: 120px;
     margin-right: 120px;
   }
+  .mb-70 {
+    width: 40%;
+  }
 }
 @media screen and (max-width: 1399.98px) {
   .container-header {
@@ -60,6 +63,9 @@
   }
   .contact a span {
     font-size: 1.8rem;
+  }
+  .mb-70 {
+    width: 45%;
   }
 }
 @media screen and (max-width: 1199.98px) {
@@ -209,7 +215,7 @@
     font-size: 1.6rem;
   }
   .mb-70 {
-    width: 80%;
+    width: 50%;
   }
 }
 @media screen and (max-width: 767.98px) {
